@@ -1,13 +1,9 @@
 import './App.css';
-import Note from './components/Note/note';
+import NoteGrid from './components/NoteGrid/note-grid';
 function App() {
   return (
     <div className="App">
-      <Note
-        heading='first note'
-        note='this is a test'
-        color='green'
-      />
+      <NoteGrid />
     </div>
   );
 }

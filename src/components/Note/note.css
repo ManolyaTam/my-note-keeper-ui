@@ -1,0 +1,22 @@
+.note {
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    min-height: 200px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.note p,
+h4 {
+    margin: 0;
+}
+
+.note h4 {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.note.green {
+    background-color: #c9e4de;
+}

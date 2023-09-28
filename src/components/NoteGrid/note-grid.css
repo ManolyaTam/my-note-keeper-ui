@@ -1,0 +1,8 @@
+.note-grid {
+    max-width: 1200px;
+    margin: 100px auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px 5px;
+}
