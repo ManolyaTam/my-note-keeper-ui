@@ -1,170 +1,55 @@
 export const notes = [
     {
         title: 'my first note',
-        content: 'this is a note',
+        content: 'green',
         color: 'green',
         cDate: '20-10-2008'
     },
     {
-        title: 'my second note',
-        content: 'this is another note',
-        color: 'green',
-        cDate: '29-01-2011'
+        title: 'my nth note',
+        content: 'pink',
+        color: 'pink',
+        cDate: '19-11-2012'
     },
     {
         title: 'my nth note',
-        content: 'some content 🙂',
+        content: 'orange',
+        color: 'orange',
+        cDate: '19-11-2012'
+    },
+    {
+        title: 'my nth note',
+        content: 'yellow',
+        color: 'yellow',
+        cDate: '19-11-2012'
+    },
+    {
+        title: 'my nth note',
+        content: 'blue',
+        color: 'blue',
+        cDate: '19-11-2012'
+    },
+    {
+        title: 'my nth note',
+        content: 'purple',
+        color: 'purple',
+        cDate: '19-11-2012'
+    },
+    {
+        title: 'my nth note',
+        content: 'transparent',
         color: 'transparent',
         cDate: '19-11-2012'
     },
     {
         title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
+        content: 'red',
+        color: 'red',
         cDate: '19-11-2012'
     },
     {
         title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'some content 🙂',
-        color: 'transparent',
-        cDate: '19-11-2012'
-    },
-    {
-        title: 'my nth note',
-        content: 'and here is a red note, :) :| :(',
-        color: 'transparent',
+        content: 'no color is given',
         cDate: '19-11-2012'
     },
 ]

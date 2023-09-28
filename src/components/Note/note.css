@@ -5,6 +5,8 @@
     min-height: 200px;
     box-sizing: border-box;
     border-radius: 10px;
+    background-color: white;
+    border: 1px solid lightgrey;
 }
 
 .note p,
@@ -19,4 +21,28 @@ h4 {
 
 .note.green {
     background-color: #c9e4de;
+}
+
+.note.red {
+    background-color: #ffadad;
+}
+
+.note.orange {
+    background-color: #ffd6a5;
+}
+
+.note.yellow {
+    background-color: #faedcb;
+}
+
+.note.blue {
+    background-color: #d9edf8;
+}
+
+.note.pink {
+    background-color: #f9e2dc;
+}
+
+.note.purple {
+    background-color: #f7f5ff;
 }
