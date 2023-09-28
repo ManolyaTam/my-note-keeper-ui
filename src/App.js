@@ -1,10 +1,13 @@
 import './App.css';
-
+import Note from './components/Note/note';
 function App() {
   return (
     <div className="App">
-      my note keeper
-      what kinda font is this
+      <Note
+        heading='first note'
+        note='this is a test'
+        color='green'
+      />
     </div>
   );
 }
