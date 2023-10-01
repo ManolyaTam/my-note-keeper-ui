@@ -1,0 +1,28 @@
+.note-search-bar {
+    display: inline-block;
+    margin-left: 500px;
+}
+
+.note-search-bar input[type='search'] {
+    font-size: 18px;
+    height: 35px;
+    width: 400px;
+    padding: 10px 15px;
+
+    background-color: #f2f3f5;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+
+    border: 0;
+    outline: none;
+}
+
+.note-search-bar input[type='search']::before{
+    content: 'hello';
+}
+
+.note-search-bar input[type='search']:focus{
+    background-color: white;
+    box-shadow: 1px 2px 5px 1px lightgrey;
+    transition: 0.2s ease-in-out;
+}
