@@ -5,7 +5,8 @@ const Note = (props) => {
     return (
         <div className={`note ${props.color}`}>
             <h4>{props.title}</h4>
-            {props.content}
+            <p>{props.content}</p>
+            <p className='note-date'>{props.date}</p>
         </div>
     )
 }

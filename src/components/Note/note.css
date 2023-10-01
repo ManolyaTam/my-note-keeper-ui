@@ -1,8 +1,8 @@
 .note {
     display: inline-block;
     padding: 10px;
+    padding-bottom: 10px;
     width: 200px;
-    min-height: 200px;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: white;
@@ -17,6 +17,17 @@ h4 {
 .note h4 {
     margin-bottom: 5px;
     text-transform: capitalize;
+}
+
+.note .note-date {
+    margin-top: 20px;
+    font-size: small;
+    text-align: right;
+    width: fit-content;
+    padding: 1px 3px;
+    border-radius: 10px;
+    background-color: #f4f4f4a0;
+    margin-left: auto;
 }
 
 .note.green {

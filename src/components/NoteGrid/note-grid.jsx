@@ -5,11 +5,13 @@ import { notes } from '../../data/notes';
 const NoteGrid = () => {
     return (
         <div className='note-grid'>
-            {notes.map((note) =>
+            {notes.map((note, index) =>
                 <Note
+                    key={`note#${index}`}
                     title={note.title}
                     content={note.content}
                     color={note.color}
+                    date={note.cDate}
                 />
             )}
         </div>
