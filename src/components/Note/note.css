@@ -63,3 +63,32 @@ h4 {
 .note.purple {
     background-color: #f7f5ff;
 }
+
+.note.open-note {
+    width: 400px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 2;
+}
+
+
+.note .open-note-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.note .open-note-buttons button {
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.note .open-note-buttons button:hover {
+    border: 1px solid lightgrey;
+}
