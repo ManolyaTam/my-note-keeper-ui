@@ -1,12 +1,12 @@
 .note-search-bar {
     display: inline-block;
-    margin-left: 500px;
+    margin-left: 50px;
 }
 
 .note-search-bar input[type='search'] {
     font-size: 18px;
-    height: 35px;
-    width: 400px;
+    height: 40px;
+    width: 500px;
     padding: 10px 15px;
 
     background-color: #f2f3f5;
