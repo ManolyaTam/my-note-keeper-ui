@@ -13,8 +13,8 @@ export const notes = [
     },
     {
         title: 'my nth note',
-        content: 'this is an orange cool weird colored card with an extra large text but what if it was even longer that usual, like longer than 100 pixels, what would happen, i wonder... this is an orange cool weird colored card with an extra large text but what if it was even longer that usual, like longer than 100 pixels, what would happen, i wonder',
         color: 'orange',
+        content: 'orange',
         cDate: '19/11/2012'
     },
     {
