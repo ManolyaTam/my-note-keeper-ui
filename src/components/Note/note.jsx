@@ -20,6 +20,7 @@ const Note = (props) => {
             {
                 props.isSelected &&
                 <div className='open-note-buttons'>
+                    <button>&#128465;</button>
                     <button onClick={CloseHandler}>close</button>
                     <button>Done</button>
                 </div>
