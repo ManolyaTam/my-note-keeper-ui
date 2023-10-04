@@ -1,27 +1,20 @@
 import './note.css';
 
 const Note = (props) => {
-
-    // call color -> className parser?
-
-    const CloseHandler = (e) => {
-        e.stopPropagation();
-        props.closeNote();
-    }
-
+    const { color, date, index, isOpenNote, openNote, closeNote } = props;
     return (
         <div
-            className={`note ${props.color} ${props.isSelected ? 'open-note' : ''}`}
-            onClick={props.openNote}
+            className={`note ${color} ${isOpenNote(index) ? 'open-note' : ''}`}
+            onClick={() => openNote(index)}
         >
-            <h4>{props.title}</h4>
-            <p className='note-content'>{props.content}</p>
-            <p className='note-date'>{props.date}</p>
+            {props.renderTitle}
+            {props.renderContent}
+            <p className='note-date'>{date}</p>
             {
-                props.isSelected &&
+                isOpenNote(index) &&
                 <div className='open-note-buttons'>
                     <button>&#128465;</button>
-                    <button onClick={CloseHandler}>close</button>
+                    <button onClick={() => closeNote()}>close</button>
                     <button>Done</button>
                 </div>
             }
