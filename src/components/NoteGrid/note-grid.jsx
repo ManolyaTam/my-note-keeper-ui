@@ -12,6 +12,8 @@ const NoteGrid = () => {
                 return (
                     <Note
                         key={`note#${index}`}
+                        title={note.title}
+                        content={note.content}
                         color={note.color}
                         date={note.cDate}
                         index={index}
