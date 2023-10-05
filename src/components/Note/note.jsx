@@ -4,13 +4,12 @@ const Note = (props) => {
     const { index, isOpenNote, openNote, closeNote } = props;
 
     const resetHandler = () => { closeNote(index) };
-    const editHandler = () => { closeNote(index) }
-    let color = isOpenNote(index) ? 'red' : '';
+    const editHandler = () => { };
 
     return (
         <div className='note' onClick={() => openNote(index)}>
             <form>
-                <div className="inner-note" style={{ borderColor: color }}>
+                <div className="inner-note">
                     <input className='title-input' placeholder='Title' readOnly={!isOpenNote(index)} />
                     <textarea placeholder='Take a note...' readOnly={!isOpenNote(index)}></textarea>
                     {
