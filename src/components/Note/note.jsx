@@ -12,7 +12,7 @@ const Note = (props) => {
     const resetHandler = () => { closeNote(index) };
     const editHandler = (e) => {
         e.preventDefault();
-        setShowDialog(true);
+        closeNote(index);
     };
     return (
         <div
@@ -41,7 +41,7 @@ const Note = (props) => {
                         isOpenNote(index)
                         && <div className='new-note-buttons'>
                             <button type='reset' onClick={resetHandler}>Close</button>
-                            <button type='submit' onClick={editHandler}>Create</button>
+                            <button type='submit' onClick={editHandler}>Edit</button>
                         </div>
                     }
                     {showDelete && <button type='button' className='one-note-delete-btn' onClick={() => setShowDialog(true)}>
