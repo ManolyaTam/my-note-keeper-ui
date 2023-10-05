@@ -1,7 +1,7 @@
 import './note.css';
 
 const Note = (props) => {
-    const { index, isOpenNote, openNote, closeNote } = props;
+    const { index, isOpenNote, openNote, closeNote, color } = props;
 
     const resetHandler = () => { closeNote(index) };
     const editHandler = () => { };
@@ -9,7 +9,7 @@ const Note = (props) => {
     return (
         <div className='note' onClick={() => openNote(index)}>
             <form>
-                <div className="inner-note">
+                <div className={`inner-note ${color}`}>
                     <input className='title-input' placeholder='Title' readOnly={!isOpenNote(index)} />
                     <textarea placeholder='Take a note...' readOnly={!isOpenNote(index)}></textarea>
                     {
