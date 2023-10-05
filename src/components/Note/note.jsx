@@ -2,11 +2,11 @@ import { useState } from 'react';
 import './note.css';
 
 const Note = (props) => {
-    const { index, isOpenNote, openNote, closeNote, color, title, content, title, content } = props;
+    const { index, isOpenNote, openNote, closeNote, color, title, content } = props;
 
     const resetHandler = () => { closeNote(index) };
     const editHandler = () => { };
-    const [noteVals, setNoteVals] = useState({ title, content });    const [noteVals, setNoteVals] = useState({ title, content });
+    const [noteVals, setNoteVals] = useState({ title, content });
     return (
         <div className='note' onClick={() => openNote(index)}>
             <form>
