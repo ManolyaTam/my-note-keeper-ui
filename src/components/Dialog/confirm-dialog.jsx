@@ -1,11 +1,11 @@
 import './confirm-dialog.css';
 
 const ConfirmDialog = (props) => {
-    const { message, onReject, onConfirm } = props;
+    const { content, onReject, onConfirm } = props;
     return (
         <div className="confirm-dialog">
             <div className="confirm-dialog-innner">
-                <p>{message}</p>
+                <>{content}</>
                 <div className="confirm-dialog-button-group">
                     <button onClick={onReject}>cancel</button>
                     <button onClick={onConfirm}>ok</button>

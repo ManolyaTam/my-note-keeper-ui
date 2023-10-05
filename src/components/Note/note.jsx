@@ -51,7 +51,7 @@ const Note = (props) => {
             </form>
             {showDialog
                 && <ConfirmDialog
-                    message='are you sure you want to delete this note?'
+                    content={<p>are you sure you want to delete this note?</p>}
                     onConfirm={() => { console.log('confirmed'); setShowDialog(false); closeNote() }}
                     onReject={() => { console.log('rejected'); setShowDialog(false); closeNote() }}
                 />
