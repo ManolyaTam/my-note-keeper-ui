@@ -1,94 +1,68 @@
 .note {
+    position: relative;
+    margin: 70px auto 0;
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    padding-bottom: 10px;
-    width: 250px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    background-color: white;
-    border: 1px solid lightgrey;
+    align-items: center;
+    justify-content: center;
 }
 
-.note p,
-h4 {
-    margin: 0;
-}
-
-.note h4 {
-    margin-bottom: 5px;
-    text-transform: capitalize;
-}
-
-.note .note-content {
-    min-height: 100px;
-    flex: 1;
-}
-
-.note .note-date {
-    text-align: right;
-    width: fit-content;
-    margin-bottom: auto;
-    font-size: small;
-    padding: 1px 3px;
-    border-radius: 10px;
-    background-color: #f4f4f4a0;
-    margin-left: auto;
-}
-
-.note.green {
-    background-color: #c9e4de;
-}
-
-.note.red {
-    background-color: #ffadad;
-}
-
-.note.orange {
-    background-color: #ffd6a5;
-}
-
-.note.yellow {
-    background-color: #faedcb;
-}
-
-.note.blue {
-    background-color: #d9edf8;
-}
-
-.note.pink {
-    background-color: #f9e2dc;
-}
-
-.note.purple {
-    background-color: #f7f5ff;
-}
-
-.note.open-note {
+.note .open-add-popup-btn {
+    padding: 5px 10px;
+    font-size: 18px;
+    height: 35px;
     width: 400px;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    z-index: 2;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px 2px 5px 0 lightgrey;
 }
 
+.note .inner-note {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 5px 0 lightgrey;
+}
 
-.note .open-note-buttons {
+.note .inner-note textarea,
+.note .inner-note .title-input {
+    font-size: 16px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+}
+
+.note .inner-note textarea {
+    height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.note .new-note-buttons {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.note .open-note-buttons button {
+.note .new-note-buttons button {
     background-color: white;
     border: none;
     padding: 5px 10px;
     outline: none;
     margin: 5px;
-    border-radius: 5px;
-    border: 1px solid white;
 }
 
-.note .open-note-buttons button:hover {
-    border: 1px solid lightgrey;
+.note .new-note-buttons button:hover {
+    background-color: rgba(211, 211, 211, 0.213);
+    border-radius: 5px;
 }
