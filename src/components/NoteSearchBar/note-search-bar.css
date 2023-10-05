@@ -17,11 +17,11 @@
     outline: none;
 }
 
-.note-search-bar input[type='search']::before{
+.note-search-bar input[type='search']::before {
     content: 'hello';
 }
 
-.note-search-bar input[type='search']:focus{
+.note-search-bar input[type='search']:focus {
     background-color: white;
     box-shadow: 1px 2px 5px 1px lightgrey;
     transition: 0.2s ease-in-out;
