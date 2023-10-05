@@ -1,11 +1,13 @@
+import './note.css';
+import { DeleteTwoTone } from '@ant-design/icons'
 import { useState } from 'react';
 import ConfirmDialog from '../Dialog/confirm-dialog';
-import './note.css';
 
 const Note = (props) => {
     const { index, isOpenNote, openNote, closeNote, color, title, content } = props;
     const [noteVals, setNoteVals] = useState({ title, content });
     const [showDialog, setShowDialog] = useState(false);
+    const [showDelete, setShowDelete] = useState(false);
 
     const resetHandler = () => { closeNote(index) };
     const editHandler = (e) => {
@@ -13,7 +15,12 @@ const Note = (props) => {
         setShowDialog(true);
     };
     return (
-        <div className='note' onClick={() => openNote(index)}>
+        <div
+            className='note'
+            onClick={() => openNote(index)}
+            onMouseEnter={() => setShowDelete(true)}
+            onMouseLeave={() => setShowDelete(false)}
+        >
             <form>
                 <div className={`inner-note ${color}`}>
                     <input
@@ -36,6 +43,9 @@ const Note = (props) => {
                             <button type='submit' onClick={editHandler}>Create</button>
                         </div>
                     }
+                    {showDelete && <button type='button' className='one-note-delete-btn' onClick={() => setShowDialog(true)}>
+                        <DeleteTwoTone twoToneColor="#eb2f96" style={{ fontSize: 16 }} />
+                    </button>}
                 </div>
             </form>
             {showDialog

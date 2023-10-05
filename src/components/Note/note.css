@@ -95,3 +95,13 @@
 .inner-note.purple {
     background-color: #f7f5ff;
 }
+
+.note .one-note-delete-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid #eb2f96;
+}
