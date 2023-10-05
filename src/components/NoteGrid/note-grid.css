@@ -2,8 +2,8 @@
     max-width: 1700px;
     margin: 20px auto;
     box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .note-grid .note {
