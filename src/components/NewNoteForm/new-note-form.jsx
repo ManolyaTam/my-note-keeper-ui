@@ -1,11 +1,22 @@
-import { useState } from 'react';
 import './new-note-form.css';
+import { useState } from 'react';
+import { createNote } from '../../services/CRUD.js'
 
 const NewNoteForm = () => {
     const [popupOpen, setPopupOpen] = useState(false);
+    const submitHandler = (e) => {
+        e.preventDefault();
+        setPopupOpen(false);
+        const newNote = {
+            title: e.target.title.value,
+            content: e.target.content.value,
+            date: Date.now()
+        }
+        createNote({ ...newNote });
+    }
     return (
         <div className='new-note-form'>
-            <form>
+            <form onSubmit={submitHandler}>
                 {!popupOpen ?
                     <button
                         className='open-add-popup-btn'
@@ -15,8 +26,16 @@ const NewNoteForm = () => {
                     </button>
                     :
                     <div className="new-note">
-                        <input className='title-input' placeholder='Title' />
-                        <textarea placeholder='Take a note...'></textarea>
+                        <input
+                            name='title'
+                            required
+                            className='title-input'
+                            placeholder='Title'
+                        />
+                        <textarea
+                            name='content'
+                            placeholder='Take a note...'
+                        />
                         <div className='new-note-buttons'>
                             <button
                                 onClick={() => setPopupOpen(false)}
