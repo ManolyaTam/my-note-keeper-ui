@@ -2,7 +2,7 @@ import './new-note-form.css';
 import { useState } from 'react';
 import { createNote } from '../../services/CRUD.js'
 
-const NewNoteForm = () => {
+const NewNoteForm = (props) => {
     const [popupOpen, setPopupOpen] = useState(false);
     const submitHandler = (e) => {
         e.preventDefault();
@@ -12,7 +12,9 @@ const NewNoteForm = () => {
             content: e.target.content.value,
             date: Date.now()
         }
-        createNote({ ...newNote });
+        createNote({ ...newNote })
+            .then(() => props.fetchNotes())
+
     }
     return (
         <div className='new-note-form'>
