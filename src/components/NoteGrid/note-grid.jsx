@@ -1,10 +1,15 @@
 import './note-grid.css';
 import Note from '../Note/note';
 import useNoteFocus from '../../hooks/note-focus.hook';
+import { deleteNote } from '../../services/CRUD';
 
 const NoteGrid = (props) => {
-
     const focusHook = useNoteFocus();
+    const deleteHandler = (id) => {
+        deleteNote(id)
+            .then(() => props.fetchNotes())
+    }
+
     return (
         <div className='note-grid'>
             {props.notes.map((note, index) => {
@@ -17,6 +22,8 @@ const NoteGrid = (props) => {
                         date={note.cDate}
                         index={index}
                         {...focusHook}
+                        id={note._id}
+                        deleteHandler={deleteHandler}
                     />)
             }
             )}

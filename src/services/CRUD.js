@@ -30,3 +30,18 @@ export const getAllNotes = () => {
             return false;
         })
 }
+
+
+export const deleteNote = (id) => {
+    return fetch(`${api}/notes/${id}`, {
+        method: 'DELETE',
+    }).then(res => {
+        if (res.status === 200)
+            return true;
+        else
+            return false;
+    }).catch(err => {
+        console.error(err);
+        return false;
+    })
+}

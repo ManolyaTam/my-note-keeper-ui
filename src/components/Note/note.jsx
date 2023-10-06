@@ -4,7 +4,7 @@ import { useState } from 'react';
 import ConfirmDialog from '../Dialog/confirm-dialog';
 
 const Note = (props) => {
-    const { index, isOpenNote, openNote, closeNote, color, title, content } = props;
+    const { index, isOpenNote, openNote, closeNote, color, title, content, deleteHandler, id } = props;
     const [noteVals, setNoteVals] = useState({ title, content });
     const [showDialog, setShowDialog] = useState(false);
     const [showDelete, setShowDelete] = useState(false);
@@ -51,7 +51,7 @@ const Note = (props) => {
             {showDialog
                 && <ConfirmDialog
                     content={<p>are you sure you want to delete this note?</p>}
-                    onConfirm={() => { setShowDialog(false); closeNote() }}
+                    onConfirm={() => { deleteHandler(id); setShowDialog(false); closeNote() }}
                     onReject={() => { setShowDialog(false); closeNote() }}
                 />
             }

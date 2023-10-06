@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <Header />
       <NewNoteForm fetchNotes={fetchNotes} />
-      <NoteGrid notes={notes} />
+      <NoteGrid notes={notes} fetchNotes={fetchNotes} />
     </div>
   );
 }
