@@ -17,3 +17,16 @@ export const createNote = ({ title, content, date }) => {
         return false;
     })
 }
+
+export const getAllNotes = () => {
+    return fetch(`${api}/notes`)
+        .then(res => {
+            if (res.status === 200)
+                return res.json();
+            else
+                throw Error('');
+        }).catch(err => {
+            console.error(err);
+            return false;
+        })
+}
