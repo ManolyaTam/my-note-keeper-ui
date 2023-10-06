@@ -31,7 +31,7 @@ const Note = (props) => {
                         onChange={(e) => setNoteVals({ ...noteVals, title: e.target.value })}
                     />
 
-                    <span class="span-textarea" role="textbox" contentEditable
+                    <span className="span-textarea" role="textbox" contentEditable
                         placeholder='Take a note...'
                         readOnly={!isOpenNote(index)}
                         value={noteVals.content}
