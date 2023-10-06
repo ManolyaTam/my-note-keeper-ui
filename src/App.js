@@ -8,7 +8,6 @@ import { getAllNotes } from './services/CRUD';
 function App() {
   const [notes, setNotes] = useState([]);
   const fetchNotes = async () => {
-    console.log('in fetchNotes');
     const fetchedNotes = await getAllNotes();
     setNotes(fetchedNotes);
   }
