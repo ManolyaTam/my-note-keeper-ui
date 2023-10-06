@@ -63,7 +63,8 @@
     margin: 5px;
 }
 
-.new-note-form .new-note-buttons button:hover {
+.new-note-form .new-note-buttons button:hover,
+.new-note-form .new-note-buttons button:focus {
     background-color: rgba(211, 211, 211, 0.213);
     border-radius: 5px;
 }

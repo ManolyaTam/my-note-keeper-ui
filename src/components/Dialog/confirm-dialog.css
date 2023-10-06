@@ -37,7 +37,8 @@
     font-size: 14px;
 }
 
-.confirm-dialog button:hover {
+.confirm-dialog button:hover,
+.confirm-dialog button:focus {
     background-color: rgba(211, 211, 211, 0.213);
 }
 

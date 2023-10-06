@@ -59,7 +59,8 @@
     margin: 5px;
 }
 
-.note .new-note-buttons button:hover {
+.note .new-note-buttons button:hover,
+.note .new-note-buttons button:focus {
     background-color: rgba(211, 211, 211, 0.213);
     border-radius: 5px;
 }
