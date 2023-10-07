@@ -13,13 +13,11 @@ function App() {
 
   const fetchNotes = async () => {
     const fetchedNotes = await getAllNotes(searchParam);
-    console.log(fetchedNotes);
     setNotes(fetchedNotes);
   }
 
   useEffect(() => {
     fetchNotes(searchParam);
-    console.log('in useeffect')
     // eslint-disable-next-line
   }, [searchParam])
 
