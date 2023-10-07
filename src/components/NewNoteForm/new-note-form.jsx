@@ -1,5 +1,6 @@
 import './new-note-form.css';
 import { useState } from 'react';
+import { getRandColor } from '../../data/colors';
 import { createNote } from '../../services/CRUD.js'
 
 const NewNoteForm = (props) => {
@@ -10,7 +11,8 @@ const NewNoteForm = (props) => {
         const newNote = {
             title: e.target.title.value,
             content: e.target.content.value,
-            date: Date.now()
+            date: Date.now(),
+            color: getRandColor()
         }
         createNote({ ...newNote })
             .then(() => props.fetchNotes())

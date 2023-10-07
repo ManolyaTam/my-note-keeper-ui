@@ -1,9 +1,9 @@
 const api = 'http://localhost:3001';
 
-export const createNote = ({ title, content, date }) => {
+export const createNote = ({ title, content, date, color = 'white' }) => {
     return fetch(`${api}/notes`, {
         method: 'POST',
-        body: JSON.stringify({ title, content, date }),
+        body: JSON.stringify({ title, content, date, color }),
         headers: {
             'Content-Type': 'application/json'
         }
