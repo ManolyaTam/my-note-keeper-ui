@@ -18,8 +18,8 @@ export const createNote = ({ title, content, date }) => {
     })
 }
 
-export const getAllNotes = () => {
-    return fetch(`${api}/notes`)
+export const getAllNotes = (searchParam) => {
+    return fetch(`${api}/notes?term=${searchParam}`)
         .then(res => {
             if (res.status === 200)
                 return res.json();

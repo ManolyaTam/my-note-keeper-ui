@@ -1,6 +1,6 @@
 import './note.css';
 import { DeleteTwoTone } from '@ant-design/icons'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ConfirmDialog from '../Dialog/confirm-dialog';
 
 const Note = (props) => {
@@ -13,6 +13,10 @@ const Note = (props) => {
     const [noteVals, setNoteVals] = useState({ title, content, date });
     const [showDialog, setShowDialog] = useState(false);
     const [showDelete, setShowDelete] = useState(false);
+
+    useEffect(() => {
+        setNoteVals({ title, content, date })
+    }, [title, content, date])
 
     const resetHandler = (e) => {
         e.preventDefault();

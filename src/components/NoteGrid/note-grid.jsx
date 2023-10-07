@@ -14,10 +14,11 @@ const NoteGrid = (props) => {
         updateNote({ id, ...newNote })
             .then(() => props.fetchNotes())
     }
-
+    console.log('in note-grid', props.notes);
     return (
         <div className='note-grid'>
             {props.notes.map((note, index) => {
+                console.log(note.title);
                 return (
                     <Note
                         key={`note#${index}`}
